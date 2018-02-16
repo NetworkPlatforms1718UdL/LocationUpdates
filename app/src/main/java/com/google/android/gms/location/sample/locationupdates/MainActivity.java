@@ -150,10 +150,8 @@ public class MainActivity extends AppCompatActivity {
         //updateValuesFromBundle(savedInstanceState);
 
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
-        //mSettingsClient = LocationServices.getSettingsClient(this);
-
-        // Kick off the process of building the LocationCallback, LocationRequest, and
-        // LocationSettingsRequest objects.
+        
+        // Kick off the process of building the LocationCallback and LocationRequest objects.
         createLocationCallback();
         createLocationRequest();
     }
